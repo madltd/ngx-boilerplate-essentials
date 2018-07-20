@@ -11,14 +11,14 @@
     "basic",
     "simple"
   ],
-  "homepage": "",
-  "bugs": "",
+  "homepage": "https://github.com/madltd/ngx-boilerplate-essentials",
+  "bugs": "https://github.com/madltd/ngx-boilerplate-essentials/issues",
   "author": {
     "name": "Mad Lad"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/madltd/ngx-boilerplate-essentials"
   },
   "scripts": {
     "ng": "ng",
