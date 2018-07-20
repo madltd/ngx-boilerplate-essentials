@@ -1,27 +1,68 @@
-# NgxBoilerplateEssentials
+# ngx-boilerplate-essentials by Mad Ltd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+  1. Clone this repo
+  2. Run `npm i` in the root of the cloned repo
 
-## Development server
+## Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* [About this projects](#about-this-project)
+* [Details](#details)
+* [Notes](#notes)
+* [Roadmap](#roadmap)
+* [Bugs and requests](#bugs-and-fixes)
+* [Changelog](#changelog)
+* [Packages and disclaimers](#packages-and-disclaimers)
 
-## Code scaffolding
+## About this project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+I create multiple Angular projects every week, let it be for testing or production, I end up recreating the same structure and functions every time, so I decided to put together this boilerplate that I can just clone and speed up my development.
 
-## Build
+Have a look at the structure, see if you like it, and you are more than welcome to use it for free of course :)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Details
 
-## Running unit tests
+* This set up uses **ngxs** as state management library
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* 3 service files
 
-## Running end-to-end tests
+  * Data Service - _intended to be used in interaction with an API (if any)_
+  * Auth Service
+  * Helper Service - _contains most commonly used functions_
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* 2 pipes
 
-## Further help
+  * Safe Code - _to inject code (html, style, etc) into template (e.g. in  *innerHTML* attribute) without sanitatization warnigns_
+  * Markdown to HTML
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* 1 guard
+
+  * Auth Guard
+
+* Components and Layouts
+  
+  * Layouts are just components that are intended to specify a certain structure depending on the route/authentication level (e.g. visitor layout and user layout)
+
+## Notes
+
+My vision of how projects shouls be structured can be entirely different to yours, so if it does not coincide let me know what you think would be a better way of doing certain things with justified reasons.
+
+## Roadmap
+
+Nothing too specific, just to continue adding 'essentials' as I encounter them and keeping packages up-to-date
+
+## Bugs and requests
+
+If you find that something is off in this project, don't hesitate to submit an issue regarding this matter.
+Additionally, as I mentioned in notes, you are very welcome toi suggest you vision of how it is better to structire project with justifications.
+
+## Changelog
+
+**Current Version:** 1.0.0-beta.0
+
+* **1.0.0-beta.0**
+
+  Initial release
+
+## Packages and disclaimers
+
+For converting strings to camelCase and back, I am using the same exact functions as [@swimlane/ngx-datatable](https://github.com/swimlane/ngx-datatable/blob/master/src/utils/camel-case.ts) uses
